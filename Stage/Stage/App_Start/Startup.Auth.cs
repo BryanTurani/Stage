@@ -59,11 +59,11 @@ namespace Stage
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "369753308764-f5e8vvvpaq1elm97j13pcqt61sl14e9n.apps.googleusercontent.com",
+                ClientSecret = "3qI3PoHtE6Q4Oh4XOyPRzPSc"
+            });
         }
     }
 }
