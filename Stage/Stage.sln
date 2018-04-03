@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stage", "Stage\Stage.csproj", "{514AD8CF-929E-48C7-B002-094D4DEBAD0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity", "ContosoUniversity\ContosoUniversity.csproj", "{BC04E751-C8D9-4D4E-B48D-9B0379CFBAF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoUniversity", "ContosoUniversity\ContosoUniversity.csproj", "{BC04E751-C8D9-4D4E-B48D-9B0379CFBAF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLoginDB", "TestLoginDB\TestLoginDB.csproj", "{A712D3A2-63A8-4661-B9C8-71A7D8763926}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{BC04E751-C8D9-4D4E-B48D-9B0379CFBAF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC04E751-C8D9-4D4E-B48D-9B0379CFBAF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC04E751-C8D9-4D4E-B48D-9B0379CFBAF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A712D3A2-63A8-4661-B9C8-71A7D8763926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A712D3A2-63A8-4661-B9C8-71A7D8763926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A712D3A2-63A8-4661-B9C8-71A7D8763926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A712D3A2-63A8-4661-B9C8-71A7D8763926}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
