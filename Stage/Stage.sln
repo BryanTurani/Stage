@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoUniversity", "Contos
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLoginDatabase", "TestLoginDatabase\TestLoginDatabase.csproj", "{77B452D2-B0D4-4831-B332-FFBB42D740E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProveVarie", "ProveVarie\ProveVarie.csproj", "{2A540951-FEB5-4FD3-831E-B89EA1B0AC54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{77B452D2-B0D4-4831-B332-FFBB42D740E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77B452D2-B0D4-4831-B332-FFBB42D740E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77B452D2-B0D4-4831-B332-FFBB42D740E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A540951-FEB5-4FD3-831E-B89EA1B0AC54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A540951-FEB5-4FD3-831E-B89EA1B0AC54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A540951-FEB5-4FD3-831E-B89EA1B0AC54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A540951-FEB5-4FD3-831E-B89EA1B0AC54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
