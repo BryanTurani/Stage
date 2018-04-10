@@ -1,0 +1,88 @@
+﻿@model Carnet
+@{
+    ViewBag.Title = "Registrazione blocchetti";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+<h4>Registra un nuovo blocchetto</h4>
+<hr />
+<div class="container containerPad">
+    <form method="post">
+        <div class="form-group">
+            @Html.LabelFor(model => model.Barcode)
+            @Html.EditorFor(model => model.Barcode, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Stockist)
+            @Html.EditorFor(model => model.Stockist, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Capacity)
+            @Html.EditorFor(model => model.Capacity, new { htmlAttributes = new { @class = "form-control" } })
+            @*@Html.ValidationMessageFor(model => model.VoucherNum, "", new { @class = "text-danger" })*@
+            @*<select asp-for="VoucherNum" class="form-control" asp-items="cost"></select>*@
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Cost)
+            @Html.EditorFor(model => model.Cost, new { htmlAttributes = new { @class = "form-control" } })
+            @*@Html.ValidationMessageFor(model => model.Cost, "", new { @class = "text-danger" })*@
+        </div>
+
+        <!--input di prova-->
+        @*<div class="form-group">
+                <label class="control-label">Data</label>
+                @Html.EditorFor(model => model.data_registrazione,  new { htmlAttributes = new { @class = "form-control", @type="date" } })
+            </div>*@
+
+        <div class="form-group">
+            @Html.ActionLink("Annulla", "Index", "Home", null, new { @class = "btn btn-default" })
+            @*<a class="btn btn-default" asp-controller="Carnet" asp-action="Secretary/Index">Annulla</a>*@
+            <input type="submit" class="btn btn-primary" value="Registra" />
+        </div>
+    </form>
+</div>
+
+<!-- Modal -->
+<div id="SaveModal" class="modal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content text-center">
+            <div class="modal-header">
+                <h4 class="modal-title">Conferma registrazione</h4>
+            </div>
+            <div class="modal-body">
+                <p>Vuoi registrare il blocchetto @(Model.Barcode)?</p>
+            </div>
+            <div class="modal-footer">
+                <input type="submit" class="btn btn-primary" value="Ok" />
+                @*@Html.ActionLink("Chiudi", "Index", "Home", null, new { @class = "btn btn-default" @data_dismiss = "modal" })*@
+                <input id="closeBtn2" type="button" class="btn btn-primary" data-dismiss="modal" value="Chiudi">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="assignmentModal" class="modal fade in" role="dialog">
+    <div class="modal-dialog" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content text-center">
+            <div class="modal-header">
+                <h4 class="modal-title">Assegnazione blocchetto</h4>
+            </div>
+            <div class="modal-body">
+                <p>Vuoi assegnare il blocchetto?</p>
+                @*@Html.LabelFor(model => model.CostCenter)
+                    @Html.DropDownListFor(m => m.CostCenter, selectListItems, "HR")*@
+            </div>
+            <div class="modal-footer">
+                <input type="submit" class="btn btn-primary" value="Assegna" />
+                <input id="closeBtn" type="button" class="btn btn-primary" data-dismiss="modal" value="Chiudi"><!--close-->
+            </div>
+        </div>
+
+    </div>
+</div>
